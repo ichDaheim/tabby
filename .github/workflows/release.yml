@@ -53,6 +53,10 @@ jobs:
             ext: .exe
             build_args: --features cuda
             windows_cuda: '12.2.0'
+          - os: windows-latest
+            target: x86_64-pc-windows-msvc
+            binary: x86_64-windows-msvc
+            ext: .exe
 
     env:
       SCCACHE_GHA_ENABLED: true
